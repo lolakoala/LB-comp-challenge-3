@@ -22,8 +22,8 @@
 .column-2 {
   width: 85%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: gray;
 }
 
 .nav {
@@ -46,61 +46,53 @@
   border: none;
 }
 
-.main {
-  margin-top: 0;
-  margin-bottom: 0;
-  border: 0.5px solid magenta;
-}
-
 .search {
   width: 100%;
   height: 60px;
+  margin: 0;
+  background-color: blue;
   margin: 0;
 }
 
 .header {
   width: 100%;
-  height: 120px;
+  height: 150px;
   margin: 0;
-}
-
-.graph-container {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0px;
-  width: 100%;
-  height: 240px;
+  background-color: magenta;
+  margin: 0px 0px 20px 0px;
 }
 
 .circle-graph {
-  height: 200px;
+  height: 250px;
   width: 52%;
+  background-color: purple;
+  margin-left: 4%;
 }
 
 .bar-graph {
-  height: 200px;
+  height: 250px;
   width: 40%;
+  background-color: yellow;
+  margin-right: 2%;
 }
 
 .break {
   width: 100%;
   height: 40px;
-  margin: 10px 0px;
-}
-
-.meat {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  width: 100%;
+  margin: 20px 0px;
+  background-color: orange;
 }
 
 .job-desc {
-  width: 62%;
+  width: 55%;
   height: 450px;
+  background-color: green;
+  margin: 0px 4%;
 }
 
 .social-media {
-  width: 26%;
+  width: 30%;
   height: 450px;
+  background-color: red;
+  margin: 0px 3%;
 }
