@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Comp 3</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet" />
@@ -12,18 +13,63 @@
     <main class="main-container">
       <section class="main-columns column-1">
         <article class="nav user">
+          <img src="images/rainbow-dash.jpeg" class="profile-pic" alt="Your profile picture" />
+          <p class="username">Rainbow Dash <i class="fa fa-angle-down" aria-hidden="true"></i></p>
         </article>
         <article class="nav main-nav">
+          <p class="title">Main <i class="fa fa-level-down" aria-hidden="true"></i></p>
+          <ul class="list fa-ul">
+            <li><i class="fa-li fa fa-home" aria-hidden="true"></i>HOME</li>
+            <li><i class="fa-li fa fa-briefcase" aria-hidden="true"></i>JOBS</li>
+            <li><i class="fa-li fa fa-file-text" aria-hidden="true"></i>RESUMES</li>
+            <li><i class="fa-li fa fa-clipboard" aria-hidden="true"></i>TASKS</li>
+            <li><i class="fa-li fa fa-calendar" aria-hidden="true"></i>CALENDAR</li>
         </article>
         <article class="nav admin">
+          <p class="title admin-title">Admin <i class="fa fa-level-down" aria-hidden="true"></i></p>
+          <ul class="list fa-ul">
+            <li><i class="fa-li fa fa-user-plus" aria-hidden="true"></i>USERS</li>
+            <li><i class="fa-li fa fa-map-marker" aria-hidden="true"></i>LOCATIONS</li>
+            <li><i class="fa-li fa fa-exchange" aria-hidden="true"></i>WORKFLOWS</li>
+            <li><i class="fa-li fa fa-address-card" aria-hidden="true"></i>JOBBOARDS</li>
+            <li><i class="fa-li fa fa-share-alt" aria-hidden="true"></i>SOCIAL</li>
         </article>
         <article class="nav cat">
+          <p class="title" id="cat-title">Categories <i class="fa fa-level-down" aria-hidden="true"></i></p>
+          <ul class="list fa-ul">
+            <li class="small-list"><i class="fa-li fa fa-check-square yellow" aria-hidden="true"></i>Administrative</li>
+            <li class="small-list"><i class="fa-li fa fa-stop blue" aria-hidden="true"></i>Design</li>
+            <li class="small-list"><i class="fa-li fa fa-stop red" aria-hidden="true"></i>Executive</li>
+            <li class="small-list"><i class="fa-li fa fa-stop green" aria-hidden="true"></i>Human Resources</li>
         </article>
       </section>
       <section class="main-columns column-2">
         <article class="main search">
+          <div class="search-icon search-div hamburger">
+            <p><i class="fa fa-angle-left" aria-hidden="true"></i>
+            <i class="fa fa-bars" aria-hidden="true"></i></p>
+          </div>
+          <div class="search-icon search-div magnify">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <input type="text" class="search-div" id="search-input" role="search" aria-required="false" placeholder="Search for a job, task, or resume."/>
+          <div class="search-icon search-div teal">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+          </div>
+          <div class="search-icon search-div bathtub">
+            <i class="fa fa-bath" aria-hidden="true"></i>
+          </div>
+          <div class="search-icon search-div dot-grid">
+            <i class="fa fa-th" aria-hidden="true"></i>
+          </div>
         </article>
         <article class="main header">
+          <div class="job-header">
+          </div>
+          <div class="header-buttons">
+          </div>
+          <div class="header-nav">
+          </div>
         </article>
         <article class="main circle-graph">
         </article>

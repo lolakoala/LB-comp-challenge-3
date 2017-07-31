@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Open Sans";
 }
 
 .main-container {
@@ -12,34 +13,92 @@
 .main-columns {
   margin: 0;
   height: auto;
-  border: 0.5px solid black;
 }
 
 .column-1 {
   width: 15%;
+  background-color: #354052;
+  color: #A9B4C6;
 }
 
 .column-2 {
   width: 85%;
   display: flex;
   flex-wrap: wrap;
-  background-color: gray;
+  background-color: #FFF;
+}
+
+.profile-pic {
+  height: 83px;
+  width: 75px;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.username {
+  font-size: 12px;
+  margin-bottom: 20px;
 }
 
 .nav {
   width: 100%;
   margin: 0;
-  border: solid 1px navy;
+  border-bottom: solid 1px #2D384A;
 }
 
 .user {
-  height: 150px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-nav,
 .admin {
   height: 250px;
+  font-size: 14px;
 }
+
+.title {
+  display: block;
+  margin: 20px 15px;
+  font-size: 12px;
+}
+
+.small-list {
+  font-size: 12px;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.fa-level-down {
+  display: none;
+}
+
+.list {
+  margin-left: 40px;
+}
+
+.list li {
+  margin-bottom: 20px;
+}
+
 
 .cat {
   height: 100%auto;
@@ -49,16 +108,99 @@
   width: 100%;
   height: 60px;
   margin: 0;
-  background-color: blue;
-  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.search-div {
+  height: 100%;
+  border: 0.1px solid #d3d3d3;
+  background-color: #FFF;
+  display: inline-block;
+}
+
+.search-icon {
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #B0B1B5;
+}
+
+.fa-angle-left {
+  color: #16A3FB;
+  font-weight: bold;
+  position: absolute;
+  /*display: none;*/
+  top: 35%;
+  left: 1%;
+  font-size: 16px;
+}
+
+.fa-search {
+  margin: 15px;
+}
+
+.magnify {
+  border-right: none;
+}
+
+#search-input {
+  border-left: #FFF;
+  width: 72%;
+}
+
+::-webkit-input-placeholder {
+  color: #B0B1B5;
+}
+
+.fa-bars {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+}
+
+.teal {
+  background-color: #16A3FB;
+  color: #FFF;
+  border: none;
 }
 
 .header {
   width: 100%;
-  height: 150px;
+  height: 175px;
   margin: 0;
-  background-color: magenta;
+  background-color: #FFF;
   margin: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.job-header,
+.header-buttons,
+.header-nav {
+  border: 1px solid black;
+  display: inline-block;
+  margin: none;
+}
+
+.job-header {
+  width: 70%;
+  height: 70%;
+}
+
+.header-buttons {
+  width: 30%;
+  height: 70%;
+}
+
+.header-nav {
+  width: 100%;
+  height: 30%;
 }
 
 .circle-graph {
@@ -96,14 +238,30 @@
   margin: 0px 3%;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 850px) {
   .column-1 {
     width: 25%;
   }
 
   .search {
     order: 1;
-    height: 120px;
+    height: 60px;
+  }
+
+  .search-icon {
+    width: 15%;
+  }
+
+  .search-input {
+    width: 55%;
+  }
+
+  .fa-angle-left {
+    left: 2%;
+  }
+
+  .fa-bars {
+    left: 4%;
   }
 
   .header {
@@ -142,7 +300,7 @@
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
   .main-container {
     flex-direction: column;
   }
@@ -162,13 +320,15 @@
   .user {
     height: 100%;
     width: 200px;
+    display: flex;
+    flex-direction: column;
   }
 
   .main-nav,
   .admin,
   .cat {
     height: 49px;
-    width: 400px;
+    width: auto;
   }
 
   .column-2 {
@@ -179,6 +339,29 @@
   .search {
     width: 100%;
     height: 60px;
+  }
+
+  .teal,
+  .bathtub,
+  .dot-grid {
+    display: none;
+  }
+
+  .hamburger,
+  .magnify {
+    width: 20%;
+  }
+
+  .fa-angle-left {
+    left: 4%;
+  }
+
+  .fa-bars {
+    left: 6%;
+  }
+
+  #search-input {
+    width: 60%;
   }
 
   .header {
@@ -216,5 +399,27 @@
     top: 710px;
     margin: 0;
   }
+
+  .list li {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+  .fa-level-down {
+    display: inline;
+  }
+
+  .cat{
+    border: none;
+  }
+
 
 }
